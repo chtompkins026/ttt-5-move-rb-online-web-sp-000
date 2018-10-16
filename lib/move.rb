@@ -13,7 +13,6 @@ def input_to_index(input)
    index
 end
 
-def move(board, input, player="X")
-  index = input_to_index(input)
-  display_board(board)
-end
+def move(board, index, token="X")
+  board[index] = token
+end 
