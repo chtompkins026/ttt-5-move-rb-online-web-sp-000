@@ -13,9 +13,7 @@ def input_to_index(input)
    index
 end
 
-def move(board)
-  puts "Please enter 1-9:"
-  user_input = gets.strip
-  index = input_to_index(user_input)
+def move(board, input)
+  index = input_to_index(input)
   display_board(board)
 end
